@@ -35,7 +35,7 @@ alert(canEnroll);
 // Product Offer
 let offerNotExpired = true;
 let premiumMember = true;
-let itemsBought;
+let itemsBought = 0;
 let applyProductOffer = offerNotExpired && (itemsBought > 2 || premiumMember);
 alert(applyProductOffer);
 
