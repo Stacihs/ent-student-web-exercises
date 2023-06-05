@@ -20,15 +20,15 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor(colorName) {
-	if (colorName === 'yellow') {
-		return 'Yellow is the color of the sun.';
-	} else if (colorName === 'blue') {
-		return 'Blue is the color of the ocean.';
-	} else {
-		return `${colorName} is an interesting color.`;
-	}
-}
+// function analyzeColor(colorName) {
+// 	if (colorName === 'yellow') {
+// 		return 'Yellow is the color of the sun.';
+// 	} else if (colorName === 'blue') {
+// 		return 'Blue is the color of the ocean.';
+// 	} else {
+// 		return `${colorName} is an interesting color.`;
+// 	}
+// }
 
 // console.log(analyzeColor('blue'));
 
@@ -45,32 +45,40 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+
 // console.log(analyzeColor(randomColor));
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-// const colorName = prompt("What's your favorite color?");
-// switch (colorName) {
-// 	case 'yellow':
-// 		alert('Yellow is the color of the sun.');
-// 		break;
-// 	case 'blue':
-// 		alert('Blue is the color of the ocean.');
-// 		break;
-// 	default:
-// 		alert(`${colorName} is an interesting color.`);
-// 		break;
-// }
+// REFACTOR REFACTOR REFACTOR keep returns, no alerts
 
-/**
+
+function analyzeColor(colorName) {
+	switch (colorName) {
+		case 'yellow':
+			return 'Yellow is the color of the sun.';
+		case 'blue':
+			return 'Blue is the color of the ocean.';
+		default:
+			return `${colorName} is an interesting color.`;
+	}
+}
+
+	// console.log(analyzeColor('yellow'));
+
+	/**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+// 	ASSIGN RETURN VALUE TO A VARIABLE
+
 // const userColor = prompt("Enter a color");
-// alert(analyzeColor(userColor));
+// const userChoice = analyzeColor(userColor);
+
+// alert(`This was your color: ${userChoice}`);
 /* ########################################################################## */
 
 /**
@@ -96,7 +104,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 function calculateTotal(luckyNum, totalAmt) {
 	let discountedAmt;
 	if (luckyNum === 0) {
-		return 0;
+		return totalAmt;
 	} else if (luckyNum === 1) {
 		discountedAmt = totalAmt - (totalAmt * .10);
 		return discountedAmt;
@@ -110,10 +118,10 @@ function calculateTotal(luckyNum, totalAmt) {
 		discountedAmt = totalAmt - (totalAmt * .50);
 		return discountedAmt;
 	} else {
-		return "Everything is FREE!";
+		return 0;
 	}
 }
-// console.log(calculateTotal(5, 100));
+// console.log(calculateTotal(4, 100));
 
 /**
  * TODO:
@@ -124,7 +132,7 @@ function calculateTotal(luckyNum, totalAmt) {
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
+// var luckyNumber = Math.floor(Math.random() * 6);
 // const userTotalBill = parseInt(prompt('What was your total bill?'));
 // (calculateTotal(luckyNumber, userTotalBill));
 // alert(`Your lucky number was ${luckyNumber} and the original bill total was ${userTotalBill}.`);
@@ -150,39 +158,48 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 // confirm('Would you like to enter a number?');
-// let userNum = parseInt(prompt('Enter a number'));
-// if (typeof userNum !== "number") {
-// 	prompt(`Please enter a integer`);
-// } else if (userNum % 2 === 0) {
-// 	alert(`Your number is even`);
+// let userNum = parseFloat(prompt('Enter a number'));
+// if (!isNaN(userNum)) {
+// 	if (userNum % 2 === 0) {
+// 		alert(`Your number is even`);
+// 	} else {
+// 		alert(`Your number is odd`);
+// 	}
+// 	if (userNum >= 0) {
+// 		alert(`Your number is positive`);
+// 	} else {
+// 		alert(`Your number is negative`);
+// 	}
+// 	userNum += 100;
+// 	alert(`Your number plus 100 is ${userNum}`);
 // } else {
-// 	alert(`Your number is odd`);
+// 	alert(`That's not a number`);
 // }
-// userNum += 100;
-// alert(`Your number plus 100 is ${userNum}`);
-//
-// if (userNum >= 0) {
-// 	alert(`Your number is positive`);
-// } else {
-// 	alert(`Your number is negative`);
-// }
-const funGame = function () {
+
+
 	confirm('Would you like to enter a number?');
-	let userNum = parseInt(prompt('Enter a number'));
-	if (typeof userNum !== "number") {
-		alert(`That is not a number`);
-		parseInt(prompt('Enter a number'));
-	} else if (userNum % 2 === 0) {
-		alert(`Your number is even`);
+	let userNum = parseFloat(prompt('Enter a number'));
+	if (!isNaN(userNum)) {
+
+		function isEven(userNum) {
+			if (userNum % 2 === 0) {
+				alert(`Your number is even`);
+			} else {
+				alert(`Your number is odd`);
+			}
+		}
+
+		function isPositive(userNum) {
+			if (userNum >= 0) {
+				alert(`Your number is positive`);
+			} else {
+				alert(`Your number is negative`);
+			}
+		}
+
+		userNum += 100;
+		alert(`Your number plus 100 is ${userNum}`);
+
 	} else {
-		alert(`Your number is odd`);
+		alert(`That's not a number`);
 	}
-	let userNumResult =  userNum + 100;
-	alert(`Your number plus 100 is ${userNumResult}`);
-	if (userNum >= 0) {
-		alert(`Your number is positive`);
-	} else {
-		alert(`Your number is negative`);
-	}
-}
-funGame();
