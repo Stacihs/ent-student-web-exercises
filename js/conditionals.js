@@ -177,29 +177,29 @@ function calculateTotal(luckyNum, totalAmt) {
 // }
 
 
-	confirm('Would you like to enter a number?');
-	let userNum = parseFloat(prompt('Enter a number'));
-	if (!isNaN(userNum)) {
-
-		function isEven(userNum) {
-			if (userNum % 2 === 0) {
-				alert(`Your number is even`);
-			} else {
-				alert(`Your number is odd`);
-			}
-		}
-
-		function isPositive(userNum) {
-			if (userNum >= 0) {
-				alert(`Your number is positive`);
-			} else {
-				alert(`Your number is negative`);
-			}
-		}
-
-		userNum += 100;
-		alert(`Your number plus 100 is ${userNum}`);
-
-	} else {
-		alert(`That's not a number`);
-	}
+	// confirm('Would you like to enter a number?');
+	// let userNum = parseFloat(prompt('Enter a number'));
+	// if (!isNaN(userNum)) {
+	//
+	// 	function isEven(userNum) {
+	// 		if (userNum % 2 === 0) {
+	// 			alert(`Your number is even`);
+	// 		} else {
+	// 			alert(`Your number is odd`);
+	// 		}
+	// 	}
+	//
+	// 	function isPositive(userNum) {
+	// 		if (userNum >= 0) {
+	// 			alert(`Your number is positive`);
+	// 		} else {
+	// 			alert(`Your number is negative`);
+	// 		}
+	// 	}
+	//
+	// 	userNum += 100;
+	// 	alert(`Your number plus 100 is ${userNum}`);
+	//
+	// } else {
+	// 	alert(`That's not a number`);
+	// }
