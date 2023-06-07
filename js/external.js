@@ -12,6 +12,7 @@ let herculesRentDays = prompt("How many days did you rent 'Hercules'?");
 let pricePerDayDollars = 3;
 let mermaidTotalDollars = mermaidRentDays * pricePerDayDollars;
 let bearTotalDollars = bearRentDays * pricePerDayDollars;
+
 let herculesTotalDollars = herculesRentDays * pricePerDayDollars;
 let totalDollars = mermaidTotalDollars + bearTotalDollars + herculesTotalDollars;
 alert("Your total rental fee is " + totalDollars + " dollars.");

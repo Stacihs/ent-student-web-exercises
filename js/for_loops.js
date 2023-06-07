@@ -1,3 +1,4 @@
+"use strict";
 // function showMultiplicationTable(number) {
 // // 	console log the multiplication table for the number inputted
 // 	for (let i = 1; i <= 10; i++) {
@@ -7,8 +8,8 @@
 // }
 // showMultiplicationTable(7);
 
-// for (let i = 20; i <= 200; i++) {
-// 	let random = Math.floor((Math.random() * 200) + 20);
+// for (let i = 0; i < 10; i++) {
+// 	let random = Math.floor((Math.random() * 200 -20) + 20);
 // 	if (random % 2 === 0) {
 // 		console.log(`${random} is even`);
 // 	} else {
@@ -25,6 +26,7 @@
 // 	}
 // 	console.log(str);
 // }
+
 
 
 // for (let i = 105; i > 5; i-5) {
