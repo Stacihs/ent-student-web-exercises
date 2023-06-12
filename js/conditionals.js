@@ -157,24 +157,24 @@ function calculateTotal(luckyNum, totalAmt) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-confirm('Would you like to enter a number?');
-let userNum = parseFloat(prompt('Enter a number'));
-if (!isNaN(userNum)) {
-	if (userNum % 2 === 0) {
-		alert(`Your number is even`);
-	} else {
-		alert(`Your number is odd`);
-	}
-	if (userNum >= 0) {
-		alert(`Your number is positive`);
-	} else {
-		alert(`Your number is negative`);
-	}
-	userNum += 100;
-	alert(`Your number plus 100 is ${userNum}`);
-} else {
-	alert(`That's not a number`);
-}
+// confirm('Would you like to enter a number?');
+// let userNum = parseFloat(prompt('Enter a number'));
+// if (!isNaN(userNum)) {
+// 	if (userNum % 2 === 0) {
+// 		alert(`Your number is even`);
+// 	} else {
+// 		alert(`Your number is odd`);
+// 	}
+// 	if (userNum >= 0) {
+// 		alert(`Your number is positive`);
+// 	} else {
+// 		alert(`Your number is negative`);
+// 	}
+// 	userNum += 100;
+// 	alert(`Your number plus 100 is ${userNum}`);
+// } else {
+// 	alert(`That's not a number`);
+// }
 
 
 	// confirm('Would you like to enter a number?');
