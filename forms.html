@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register With Us</title>
+</head>
+<body>
+<form method="POST" action="https://request-inspector.glitch.me/">
+	<div>
+		<label for="email">Email</label>
+		<input id="email" name="email" type="email" placeholder="Email">
+	</div>
+	<br>
+	<div>
+		<label for="password">Password</label>
+		<input id="password" name="password" type="password" placeholder="Password">
+	</div>
+	<br>
+
+	<div>
+		<label for="bio">Bio</label>
+		<textarea id="bio" name="bio"></textarea>
+	</div>
+	<br>
+
+	<fieldset>
+		<legend>How Did You Hear About Us?</legend>
+		<div>
+			<label for="billboard">Billboard</label>
+			<input id="billboard" type="radio" name="radio" value="billboard" multiple>
+		</div>
+		<div>
+			<label for="radio ad">Radio Advertisement</label>
+			<input id="radio ad" name="radio" type="radio" value="radio advertisement" multiple>
+		</div>
+		<div>
+			<label for="internet ad">Internet Advertisement</label>
+			<input id="internet ad" type="radio" name="radio" value="internet advertisement" multiple>
+		</div>
+		<div>
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="radio" value="other" multiple>
+		</div>
+	</fieldset>
+	<br>
+
+	<fieldset>
+		<legend>What browser Are you Using?</legend>
+		<label for="browser">Browser Choice</label>
+		<select name="browser" id="browser" multple>
+			<label for="google">Google</label>
+			<option id="google" name="google" value="google">Goolge</option>
+			<label for="firefox">Firefox</label>
+			<option id="firefox" name="firefox" value="firefox">Firefox</option>
+			<label for="brave">Brave</label>
+			<option id="brave" name="brave" value="brave">Brave</option>
+		</select>
+	</fieldset>
+	<br>
+
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+</form>
+
+</body>
+</html>

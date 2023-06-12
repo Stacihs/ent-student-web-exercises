@@ -32,4 +32,3 @@
 // for (let i = 105; i > 5; i-5) {
 // 	console.log(i -= 5);
 // }
-
