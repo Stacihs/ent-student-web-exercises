@@ -26,11 +26,11 @@
 // 	} else if (colorName === 'blue') {
 // 		return 'Blue is the color of the ocean.';
 // 	} else {
-// 		return `${colorName} is an interesting color.`;
+// 		return `${colorName[0].toUpperCase()}${colorName.substring(1)} is an interesting color.`;
 // 	}
 // }
-
-// console.log(analyzeColor('blue'));
+//
+// console.log(analyzeColor('purple'));
 
 
 // Don't change the next two lines!
@@ -61,11 +61,11 @@ function analyzeColor(colorName) {
 		case 'blue':
 			return 'Blue is the color of the ocean.';
 		default:
-			return `${colorName} is an interesting color.`;
+			return `${colorName[0].toUpperCase()}${colorName.substring(1)} is an interesting color.`;
 	}
 }
 
-	// console.log(analyzeColor('yellow'));
+	// console.log(analyzeColor('magenta'));
 
 	/**
  * TODO:
@@ -77,8 +77,8 @@ function analyzeColor(colorName) {
 
 // const userColor = prompt("Enter a color");
 // const userChoice = analyzeColor(userColor);
-
-// alert(`This was your color: ${userChoice}`);
+//
+// alert(`${userChoice}`);
 /* ########################################################################## */
 
 /**
@@ -104,18 +104,18 @@ function analyzeColor(colorName) {
 function calculateTotal(luckyNum, totalAmt) {
 	let discountedAmt;
 	if (luckyNum === 0) {
-		return totalAmt;
+		return totalAmt.toFixed(2);
 	} else if (luckyNum === 1) {
-		discountedAmt = totalAmt - (totalAmt * .10);
+		discountedAmt = (totalAmt - (totalAmt * .10)).toFixed(2);
 		return discountedAmt;
 	} else if (luckyNum === 2) {
-		discountedAmt = totalAmt - (totalAmt * .25);
+		discountedAmt = (totalAmt - (totalAmt * .25)).toFixed(2);
 		return discountedAmt;
 	} else if (luckyNum === 3) {
-		discountedAmt = totalAmt - (totalAmt * .35);
+		discountedAmt = (totalAmt - (totalAmt * .35)).toFixed(2);
 		return discountedAmt;
 	} else if (luckyNum === 4) {
-		discountedAmt = totalAmt - (totalAmt * .50);
+		discountedAmt = (totalAmt - (totalAmt * .50)).toFixed(2);
 		return discountedAmt;
 	} else {
 		return 0;
@@ -135,8 +135,8 @@ function calculateTotal(luckyNum, totalAmt) {
 // var luckyNumber = Math.floor(Math.random() * 6);
 // const userTotalBill = parseInt(prompt('What was your total bill?'));
 // (calculateTotal(luckyNumber, userTotalBill));
-// alert(`Your lucky number was ${luckyNumber} and the original bill total was ${userTotalBill}.`);
-// alert(`Your bill after the discount is ${calculateTotal(luckyNumber, userTotalBill)}`);
+// alert(`Your lucky number was ${luckyNumber} and the original bill total was $${userTotalBill}.`);
+// alert(`Your bill after the discount is $${calculateTotal(luckyNumber, userTotalBill)}`);
 
 
 /**
@@ -157,24 +157,24 @@ function calculateTotal(luckyNum, totalAmt) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-// confirm('Would you like to enter a number?');
-// let userNum = parseFloat(prompt('Enter a number'));
-// if (!isNaN(userNum)) {
-// 	if (userNum % 2 === 0) {
-// 		alert(`Your number is even`);
-// 	} else {
-// 		alert(`Your number is odd`);
-// 	}
-// 	if (userNum >= 0) {
-// 		alert(`Your number is positive`);
-// 	} else {
-// 		alert(`Your number is negative`);
-// 	}
-// 	userNum += 100;
-// 	alert(`Your number plus 100 is ${userNum}`);
-// } else {
-// 	alert(`That's not a number`);
-// }
+confirm('Would you like to enter a number?');
+let userNum = parseFloat(prompt('Enter a number'));
+if (!isNaN(userNum)) {
+	if (userNum % 2 === 0) {
+		alert(`Your number is even`);
+	} else {
+		alert(`Your number is odd`);
+	}
+	if (userNum >= 0) {
+		alert(`Your number is positive`);
+	} else {
+		alert(`Your number is negative`);
+	}
+	userNum += 100;
+	alert(`Your number plus 100 is ${userNum}`);
+} else {
+	alert(`That's not a number`);
+}
 
 
 	// confirm('Would you like to enter a number?');
