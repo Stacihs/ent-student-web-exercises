@@ -21,3 +21,8 @@ h1, h2 {
 .fancy-header {
     text-align: center;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
