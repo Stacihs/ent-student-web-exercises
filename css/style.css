@@ -10,9 +10,10 @@ body {
 
 div {
     background-color: #a9ecc6;
-    background-image: url("../img/fiber-cable.jpg");
+    background-image: url("../img/pexels-mark-mccammon-1934846.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 
 .fancy-header {
