@@ -38,6 +38,10 @@ ul {
     margin: 0 auto;
 }
 
+img {
+    padding: 10px;
+}
+
 .plan-prices {
     margin-left: auto;
     margin-right: auto;
