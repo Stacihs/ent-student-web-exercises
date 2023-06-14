@@ -1,0 +1,48 @@
+/*: root {*/
+/*    --bg-info: #7777b4;*/
+/*    --bg-success: #b5dcb5;*/
+/*    --bg-warning: #e0e0a5;*/
+/*    --bg-error: #d78888;*/
+/*}*/
+
+* {
+    box-sizing: border-box;
+    margin: unset;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+
+.message {
+    max-width: 100%;
+    margin: .5rem;
+    padding: .5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.message-info {
+    color: #6e6ee1;
+    background-color: #b0b0e7;
+}
+
+.message-success {
+    color: #335b33;
+    background-color: #a6cca6;
+}
+
+.message-warning {
+    color: #9a9a0e;
+    background-color: #e8e8b2;
+}
+
+.message-error {
+    color: #ea7e94;
+    background-color: #e5b7be;
+}
