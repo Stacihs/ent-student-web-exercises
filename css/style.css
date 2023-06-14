@@ -6,25 +6,22 @@ body {
     font-size: 16px;
     margin: unset;
     padding: unset;
+    background-image: url("../img/pexels-mark-mccammon-1934846.jpg");
 }
 
 div {
-    background-color: #a9ecc6;
-    background-image: url("../img/pexels-mark-mccammon-1934846.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+    padding: 2%;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .fancy-header {
-color: purple; /* single line comment */
-text-decoration: underline;
+    color: #338000; /* single line comment */
+    text-decoration: underline;
 }
 
 
 h1, h2 {
-    color: rgba(30, 122, 15, 0.88);
+    color: #060D2DE0;
     text-decoration: underline;
 }
 
@@ -36,4 +33,36 @@ ul {
     list-style-type: circle;
 }
 
+.company-pics {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.plan-prices {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+th, td {
+    width: 200px;
+    padding: 10px;
+}
+
+.plan-prices tr {
+   margin: 10px;
+}
+
+a:visited {
+    color: #FF8C00FF;
+}
+
+a:hover {
+    color: #32CD32FF;
+}
+
+a:active {
+    color: #DC143CFF;
+}
 
