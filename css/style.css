@@ -14,6 +14,7 @@ div {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .fancy-header {
@@ -29,6 +30,10 @@ h1, h2 {
 
 .fancy-header {
     text-align: center;
+}
+
+ul {
+    list-style-type: circle;
 }
 
 
