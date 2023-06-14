@@ -5,8 +5,16 @@
 body {
     font-size: 16px;
     margin: unset;
-    background-color: #a9ecc6;
+    padding: unset;
 }
+
+div {
+    background-color: #a9ecc6;
+    background-image: url("../img/fiber-cable.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .fancy-header {
 color: purple; /* single line comment */
 text-decoration: underline;
@@ -22,7 +30,4 @@ h1, h2 {
     text-align: center;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
+
