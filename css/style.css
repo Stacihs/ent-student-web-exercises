@@ -1,4 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: unset;
+    background-color: #a9ecc6;
+}
 .fancy-header {
-    color: purple; /* single line comment */
+color: purple; /* single line comment */
+text-decoration: underline;
+}
+
+
+h1, h2 {
+    color: rgba(30, 122, 15, 0.88);
     text-decoration: underline;
+}
+
+.fancy-header {
+    text-align: center;
 }
