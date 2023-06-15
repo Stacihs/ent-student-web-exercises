@@ -1,9 +1,13 @@
-/*: root {*/
-/*    --bg-info: #7777b4;*/
-/*    --bg-success: #b5dcb5;*/
-/*    --bg-warning: #e0e0a5;*/
-/*    --bg-error: #d78888;*/
-/*}*/
+:root {
+    --text-info: #5f5fde;
+    --bg-info: rgba(176, 176, 231, 0.68);
+    --text-success: #335b33;
+    --bg-success: rgba(152, 211, 152, 0.68);
+    --text-warning: #9a9a0e;
+    --bg-warning: rgba(239, 234, 143, 0.68);
+    --text-error: #945a65;
+    --bg-error: rgba(229, 183, 190, 0.68);
+}
 
 * {
     box-sizing: border-box;
@@ -28,21 +32,29 @@ body, html {
 }
 
 .message-info {
-    color: #6e6ee1;
-    background-color: #b0b0e7;
+    /*color: #6e6ee1;*/
+    /*background-color: #b0b0e7;*/
+    color: var(--text-info);
+    background-color: var(--bg-info);
 }
 
 .message-success {
-    color: #335b33;
-    background-color: #a6cca6;
+    /*color: #335b33;*/
+    /*background-color: #335b33;*/
+    color: var(--text-success);
+    background-color: var(--bg-success);
 }
 
 .message-warning {
-    color: #9a9a0e;
-    background-color: #e8e8b2;
+    /*color: #9a9a0e;*/
+    /*background-color: #e8e8b2;*/
+    color: var(--text-warning);
+    background-color: var(--bg-warning);
 }
 
 .message-error {
-    color: #ea7e94;
-    background-color: #e5b7be;
+    /*color: #ea7e94;*/
+    /*background-color: #e5b7be;*/
+    color: var(--text-error);
+    background-color: var(--bg-error);
 }
