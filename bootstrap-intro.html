@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Intro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-intro.css">
+</head>
+<body>
+<!--    <div class="d-flex gap-3 justify-content-center">-->
+<!--        <div class="test-box"></div>-->
+<!--        <div class="test-box"></div>-->
+<!--        <div class="test-box"></div>-->
+<!--    </div>-->
+
+<!--    <div class="container-md">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 col-sm-12">-->
+<!--                <div class="test-box"></div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-3 col-sm-12">-->
+<!--                <div class="test-box"></div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-3 col-sm-12">-->
+<!--                <div class="test-box"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<div class="container">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fixed navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Here</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Abroad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+</div>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <p class="lead"> <code class="small">padding-top: 60px;</code> on the <code class="small">main &gt; .container</code>.</p>
+        <p>Back to <a href="/docs/5.3/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+    </div>
+    <div>
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Custom cards</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/daises.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/flowers.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/clouds.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+        <span class="text-body-secondary">Place sticky footer content here.</span>
+    </div>
+</footer>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

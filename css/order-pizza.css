@@ -1,0 +1,12 @@
+.container-fluid.sh-hero {
+    min-height: 30vh;
+    background-image: url("../img/pizza.jpg");
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+svg {
+    margin: 5px;
+    /*background-color: gray;*/
+}
