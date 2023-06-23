@@ -12,3 +12,7 @@ a.nav-link.signup {
     margin-left: .25em;
     color: #757779;
 }
+
+.card-body {
+    background-color: #0D6EFD;
+}
