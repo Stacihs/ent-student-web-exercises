@@ -1,3 +1,6 @@
+.navbar:first-of-type {
+    width: 100%;
+}
 .container-fluid.sh-hero {
     min-height: 30vh;
     background-image: url("../img/pizza.jpg");
@@ -5,8 +8,7 @@
     background-size: cover;
     margin-bottom: 30px;
 }
-
-svg {
-    margin: 5px;
-    /*background-color: gray;*/
+a.nav-link.signup {
+    margin-left: .25em;
+    color: #757779;
 }
