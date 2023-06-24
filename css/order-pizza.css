@@ -1,7 +1,7 @@
 .navbar:first-of-type {
     width: 100%;
 }
-row.menu-group {
+.row.menu-group {
     max-width: 100%;
 }
 .container-fluid.sh-hero {
@@ -15,7 +15,11 @@ a.nav-link.signup {
     margin-left: .25em;
     color: #757779;
 }
+.nav-tabs span {
+    margin-right: .25em;
+}
 
 .card-body {
     background-color: #0D6EFD;
+    padding: .5em;
 }
