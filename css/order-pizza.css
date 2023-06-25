@@ -23,3 +23,6 @@ a.nav-link.signup {
     background-color: #0D6EFD;
     padding: .5em;
 }
+.card-footer svg {
+    margin-left: .5em;
+}
