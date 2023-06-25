@@ -61,7 +61,7 @@
                         <a class="nav-link" href="#"><span class="badge rounded-pill text-bg-primary">2</span>Cheese and Sauce</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="badge rounded-pill text-bg-primary">3</span>Toppings</a>
+                        <a class="nav-link" href="#toppings"><span class="badge rounded-pill text-bg-primary">3</span>Toppings</a>
                     </li>
                 </ul>
             </nav>
@@ -73,17 +73,17 @@
                     <div class="card-header">
                         Hand Tossed
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group">
                         <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
                         <li class="list-group-item">
-                            <input class="form-check-input me-1" type="radio" name="hand-tossed" id="small">
-                            <label class="form-check-label" for="small">
+                            <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" id="small10">
+                            <label class="form-check-label" for="small10">
                                 Small (10")
                             </label>
                         </li>
                         <li class="list-group-item">
-                            <input class="form-check-input me-1" type="radio" name="hand-tossed" id="medium">
-                            <label class="form-check-label" for="medium">
+                            <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" id="medium12">
+                            <label class="form-check-label" for="medium12">
                                 Medium (12")
                             </label>
                         </li>
@@ -93,20 +93,78 @@
                     <div class="card-header">
                         Crispy Thin
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group">
                         <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</li>
                         <li class="list-group-item">
-                            <input class="form-check-input me-1" type="radio" name="crispy-thin"
+                            <input class="form-check-input me-1" type="radio" name="crispy-thin" value=""
                                    id="medium-crispy-thin">
                             <label class="form-check-label" for="medium-crispy-thin">
                                 Medium (12")
                             </label>
                         </li>
                         <li class="list-group-item">
-                            <input class="form-check-input me-1" type="radio" name="crispy-thin"
+                            <input class="form-check-input me-1" type="radio" name="crispy-thin" value=""
                                    id="large-crispy-thin">
                             <label class="form-check-label" for="large-crispy-thin">
                                 Large (14")
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="column card container-fluid d-grid p-0 gap-2" id="crust">
+                    <div class="card-body container-fluid d-flex justify-center">
+                        <h5 class="card-title text-light">Choose Toppings</h5>
+                    </div>
+                <div class="card m-3" id="toppings">
+                    <div class="card-header">
+                        Choose Meats
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Choose Meats</li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" name="toppings" value="" id="beef">
+                            <label class="form-check-label stretched-link" for="beef">
+                                Beef
+                            </label>
+                        </li><li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" name="toppings" value="" id="ham">
+                            <label class="form-check-label stretched-link" for="ham">
+                                Ham
+                            </label>
+                        </li><li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" name="toppings" value="" id="philly-steak">
+                            <label class="form-check-label stretched-link" for="philly-steak">
+                                Philly Steak
+                            </label>
+                        </li><li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" name="toppings" value="" id="bacon">
+                            <label class="form-check-label stretched-link" for="bacon">
+                                Bacon
+                            </label>
+                        </li>
+                        <li class="list-group-item">Choose Non-Meats</li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" id="green-peppers">
+                            <label class="form-check-label stretched-link" for="green-peppers">
+                                Green Peppers
+                            </label>
+                        </li><li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" id="mushrooms">
+                            <label class="form-check-label stretched-link" for="mushrooms">
+                                Mushrooms
+                            </label>
+                        </li><li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" id="onions">
+                            <label class="form-check-label stretched-link" for="onions">
+                                Onions
+                            </label>
+                        </li><li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" id="jalapenos">
+                            <label class="form-check-label stretched-link" for="jalapenos">
+                                Jalapeno Peppers
+                            </label>
                         </li>
                     </ul>
                 </div>
