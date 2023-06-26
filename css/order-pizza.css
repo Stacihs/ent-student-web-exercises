@@ -9,7 +9,7 @@
     background-image: url("../img/pizza.jpg");
     background-position: center center;
     background-size: cover;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
 }
 a.nav-link.signup {
     margin-left: .25em;
@@ -22,6 +22,7 @@ a.nav-link.signup {
 .card-body {
     background-color: #0D6EFD;
     padding: .5em;
+    align-items: center;
 }
 .card-footer svg {
     margin-left: .5em;
