@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Debugging</title>
+</head>
+<body>
+
+<h1>HALP! I need help with functions.</h1>
+
+<script>
+	"use strict";
+
+	// TODO Help! When I run this code in the browser, I don't see an alert. What's wrong???
+	// (HAVE TO CALL THE FUNCTION)
+	// function alertHowdy() {
+	//   alert('Howdy!');
+	// }
+    // alertHowdy();
+
+	// TODO Help! I'm getting undefined in this alert. What's wrong???
+    // (HAVE TO RETURN THE RESULT)
+	// let num1 = 5;
+	// let num2 = 2;
+	// function addTwoNumbers(num1, num2) {
+	//   return (num1 + num2);
+	// }
+	// alert(addTwoNumbers(5, 2));
+
+
+	// TODO Help! Why is this always logging the wrong message?
+    // PUT IN BREAKS
+	// function returnPunctuationMsg(punctuation) {
+	//   let msg;
+	//   switch(punctuation) {
+    //       case '!':
+	//       msg = 'This is an exclamation point';
+	// 	  break;
+    //       case '.':
+	//       msg = 'This is a period';
+	// 	  break;
+    //       case '?':
+	//       msg = 'This is a question mark';
+	// 	  break;
+    //       case ',':
+	//       msg = 'This is a comma';
+	// 	  break;
+	//     default:
+	//       msg = 'I don\'t know what this is...';
+	// 	  break;
+	//   }
+	//   return msg;
+	// }
+
+	// console.log(returnPunctuationMsg('!'));
+
+	// TODO Help! Why is this always showing me that the input is seven?
+// CHANGE FROM ASSIGNMENT OPERATOR TO STRICT EQUAL OPERATOR
+	// function isSeven(num) {
+	//   if (num === 7) {
+	//     console.log('This is seven.');
+	//   } else {
+	//     console.log('This is NOT seven.');
+	//   }
+	// }
+
+	// isSeven(5);
+
+
+	// TODO Help! Why doesn't this log 4???
+// HAVE TO CALL THE FUNCTION WITH PARENS
+// 	function returnTwo() {
+// 	  return 2;
+// 	}
+//
+// 	console.log(returnTwo() + returnTwo());
+
+	// TODO Help! Why does it not matter what I enter, it is always logs the same message!
+// CHANGE CONSOLE.LOG TO ALERT
+	function logAdminIn() {
+	    if (isAdmin) {
+	        alert('Logging admin in...');
+	    } else {
+	        alert('Redirecting user to regular page...');
+	    }
+	}
+
+	let isAdmin = confirm("User one, please confirm that you are an admin.");
+	console.log(logAdminIn(isAdmin));
+
+	let isAdmin2 = confirm("User two, please confirm that you are an admin.");
+	console.log(logAdminIn(isAdmin2));
+
+	let isAdmin3 = confirm("User three, please confirm that you are an admin.");
+	console.log(logAdminIn(isAdmin3));
+
+
+</script>
+
+</body>
+</html>
