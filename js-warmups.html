@@ -8,7 +8,7 @@
 <body>
 
 <script>
-  "use strict";
+  `use strict`;
 
 //   /* TODO
 //
@@ -38,8 +38,8 @@ If the input is not a string, return false.
 
 Examples:
 
-makeUpperCase('cat') // returns 'CAT'
-makeUpperCase('DoG') // returns 'DOG'
+ makeUpperCase('cat') // returns 'CAT'
+// makeUpperCase('DoG') // returns 'DOG'
 makeUpperCase('CODEUP') // returns 'CODEUP'
 makeUpperCase(54) // returns false
 makeUpperCase(true) // returns false
@@ -54,8 +54,204 @@ makeUpperCase(null) // returns false
   //     return false;
   //   }
   // }
+
+  // let mermaidRentDays = 3;
+  // let bearRentDays = 5;
+  // let herculesRentDays = 1;
+  // let pricePerDayDollars = 3;
+  // mermaidTotalDollars = mermaidRentDays * pricePerDayDollars;
+  // bearTotalDollars = bearRentDays * pricePerDayDollars;
+  // herculesTotalDollars = herculesRentDays * pricePerDayDollars;
+  // let totalDollars = mermaidTotalDollars + bearTotalDollars + herculesTotalDollars;
   //
-  // console.log(makeUpperCase(null));
+  // let googleDollarsPerHr = 400;
+  // let amazonDollarsPerHr = 380;
+  // let facebookDollarsPerHr = 350;
+  // // NO MAGIC NUMBERS!!! Calculations include hrs worked
+  // let facebookTotalPay = facebookDollarsPerHr * 10;
+  // let googleTotalPay = googleDollarsPerHr * 6;
+  // let amazonTotalPay = amazonDollarsPerHr * 4;
+  // let totalPay = facebookTotalPay + googleTotalPay + amazonTotalPay;
+  //
+  // let classNotFull = true;
+  // let noScheduleConflict = false;
+  // let canEnroll = classNotFull && noScheduleConflict
+  //
+  //
+  // let offerNotExpired = true;
+  // let itemBought = 4;
+  // let price;
+  // let applyOffer = .10;
+  // let premiumMember;
+  //
+  // if ((itemBought > 2 && offerNotExpired === true)) || (premiumMember){
+  // else {
+  //     total = itemBought * price;
+  //   } return total;
+  //
+  //   let username = 'codeup';
+  //   let password = 'notastrongpassword';
+  //   let password5CharMin = password.length >= 5;
+  //   let passwordIncludesUsername = password.includes(username);
+  //   let username20CharLimit = username.length <= 20;
+  //   let passwordHasWhitespace = password[0] === " " || password[password.length-1] === " ";
+  //   let usernameHasWhitespace = username[0] === " " || username[username.length-1] === " ";
+
+
+    // Write a function, sumIsEqual, that takes in three inputs. The function should return
+// true if the sum of the first two inputs are equal to the third input. If any of the
+// inputs are not numbers, return false.
+//
+// sumIsEqual(1, 2, 3) // returns true
+// console.log(sumIsEqual(2, 2, 4)); // returns true
+// console.log(sumIsEqual(10, 2, 12)); // returns true
+// sumIsEqual(10, false, 12) // returns false
+// sumIsEqual('10', '2', 12) // returns false
+// sumIsEqual('fred', 'bob', 'hello') // returns false
+//
+//
+//
+// // If any of the inputs are not numbers, return false.
+//
+// function sumIsEqual(input1, input2, input3) {
+// 	if (input1 === isNaN() || input2 === isNaN() || input3 === isNaN()) {
+// 		return false;
+// 	} else {
+// 		return (input1 + input2) === input3;
+// 	}
+// }
+
+
+  ================================= WARM UP
+
+    // Write a function, returnUserObject, that takes in three String arguments: a username, password, and email. The function should return a user object with username, password and email properties.
+    //
+    // returnUserObject('jreich', 'password123', 'jreich@email.com') // returns...
+    //
+    // {
+    //     username: 'jreich',
+    //         password: 'password123',
+    //     email: 'jreich@email.com'
+    // }
+    //
+    // Assume all inputs are non-empty strings. The order of the properties on the object output do not matter but the order of the INPUTS do matter.
+    //
+
+
+    // const returnUserObject = (username, password, email) => {
+    //         return {
+    //             username: username,
+    //             email: email,
+    //             password: email
+    //     }
+    // }
+
+    // Create a function, returnProduct, that takes in an array of numbers and returns the product of all the numbers.
+    // 	Assume all element in the input array are valid numbers. Assume all array inputs have at least 1 number.
+    // returnProduct([1, 2, 3]) // returns 1 * 2 * 3 = 6
+    // returnProduct([3, 3, 3]) // returns 3 * 3 * 3 = 27
+    // returnProduct([4, 1, 2]) // returns 4 * 1 * 2 = 8
+    // returnProduct([4, 0, 2]) // returns 4 * 0 * 2 = 0
+    // returnProduct([5, 3, 2]) // returns 5 * 3 * 2 = 30
+
+    // const returnProduct = (nums) => {
+    // 	let product = 1;
+    // 	for (let num of nums) {
+    // 		product *= num;
+    // 	}
+    // 		return product;
+    // }
+
+    // Create a function, returnTotalSales, that takes in an array of sales data objects and returns the sum of all
+    // totalItemsSold properties. Assume all elements in the input array are valid sales data objects with a totalItemsSold
+    // property.
+    //
+    //     EXAMPLE...
+    //
+    // const salesData = [
+    //     {
+    //         month: 'January',
+    //         totalItemsSold: 0
+    //     },
+    //     {
+    //         month: 'February',
+    //         totalItemsSold: 5
+    //     },
+    //     {
+    //         month: 'March',
+    //         totalItemsSold: 2
+    //     },
+    //     {
+    //         month: 'April',
+    //         totalItemsSold: 10
+    //     },
+    //     {
+    //         month: 'May',
+    //         totalItemsSold: 30
+    //     }
+    // ];
+    //
+    //
+    //
+    // returnTotalSales(salesData) // returns 47
+    //
+    // function returnTotalSales(arr) {
+    //     let sum = 0;
+    //     for (let i = 0; i < arr.length; i+=1) {
+    //         sum = salesData[i].totalItemsSold;
+    //     }
+    //     return sum;
+    // }
+
+
+    // ================================= WARM UP
+    //
+    // Create a function, returnAvgSales, that takes in an array of sales data objects and returns the average of all
+    // total items sold. Assume all elements in the input array are valid sales data objects with a totalItemsSold
+    // property. If the array is empty, return 0. If the array has one element, return the value of the totalItemsSold.
+    //
+    //         EXAMPLE...
+    //
+    // const salesData = [
+    //   {
+    //     month: 'January',
+    //     totalItemsSold: 0
+    //   },
+    //   {
+    //     month: 'February',
+    //     totalItemsSold: 5
+    //   },
+    //   {
+    //     month: 'March',
+    //     totalItemsSold: 2
+    //   },
+    //   {
+    //     month: 'April',
+    //     totalItemsSold: 10
+    //   },
+    //   {
+    //     month: 'May',
+    //     totalItemsSold: 30
+    //   }
+    // ];
+    //
+    // returnAvgSales(salesData) // returns 9.4
+
+    // function returnAvgSales(salesData) {
+    //   if(arr === 0) {
+    //     return 0;
+    //   } else if (salesData.length === 1) {
+    //     return salesData[0].totalItemsSold;
+    //   } else {
+    //     return
+    //   } let sum = 0;
+    //   for (let i = 0; i < arr.length; i+=1) {
+    //     sum = salesData[i].totalItemsSold;
+    //   }
+    //   return sum;
+    // }
+
+
 </script>
 <script src="../../Library/Application Support/JetBrains/IntelliJIdea2023.1/scratches/warmup.js"></script>
 </body>
