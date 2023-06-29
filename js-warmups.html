@@ -122,7 +122,7 @@ makeUpperCase(null) // returns false
 // }
 
 
-  ================================= WARM UP
+  // ================================= WARM UP
 
     // Write a function, returnUserObject, that takes in three String arguments: a username, password, and email. The function should return a user object with username, password and email properties.
     //
@@ -251,6 +251,148 @@ makeUpperCase(null) // returns false
     //   return sum;
     // }
 
+  // ================================= WARM UP
+  //
+  // Create a function, returnAdmins, that takes in an array of user objects
+  // and returns an array of only the admin user objects. Assume the array
+  // has at least one user object and all elements have an isAdmin property.
+  //
+  //         Example:
+  //
+
+  const users = [
+
+    {
+      username: 'fred123',
+      password: 'letmein',
+      email: 'fred123@email.com',
+      isAdmin: true
+    },
+    {
+      username: 'cindy123',
+      password: 'hello123',
+      email: 'cindy123@email.com',
+      isAdmin: false
+    },
+    {
+      username: 'kathy123',
+      password: 'letmein',
+      email: 'kathy123@email.com',
+      isAdmin: true
+    },
+    {
+      username: 'kyle123',
+      password: 'letmein',
+      email: 'kyle123@email.com',
+      isAdmin: false
+    }
+  ]
+
+
+  /*
+
+  returnAdmins(users) returns...
+
+  [
+
+      {
+          username: 'fred123',
+          password: 'letmein',
+          email: 'fred123@email.com',
+          isAdmin: true
+      },
+      {
+          username: 'kathy123',
+          password: 'letmein',
+          email: 'kathy123@email.com',
+          isAdmin: true
+      }
+  ]
+
+  */
+
+  // const returnAdmins = (users) => {
+  //   let adminGroup = [];
+  //   for (let i = 0; i < users.length; i+=1) {
+  //     let i = users[0];
+  //     if(users[i].isAdmin) {
+  //       adminGroup.push(users[i].username);
+  //     }
+  //   }
+  //   return adminGroup;
+  // }
+  //
+  // console.log(returnAdmins(users));
+
+
+
+
+  // returns an array of only the admin user objects
+
+
+  // function returnTotalSales(arr) {
+  //     let sum = 0;
+  //     for (let i = 0; i < arr.length; i+=1) {
+  //         sum = salesData[i].totalItemsSold;
+  //     }
+  //     return sum;
+  // }
+
+  Write a function that takes a neighborhood object and determines if it is desirable. A neighborhood is desirable.
+          If the median home price is less than 300000, crime rates are low, and the total rating of schools is at least 24.
+  The function should return true if the neighborhood object is desireable and false otherwise.
+
+// example data...
+
+          const neighborhood1 = {
+    neighborhood: "Lovely Estates",
+    medianHomePrice: 280000,
+    pool: true,
+    tennis: false,
+    crimeRate: "low",
+    schools: 22
+  };
+
+  const neighborhood2 = {
+    neighborhood: "Luminous Estates",
+    medianHomePrice: 270000,
+    pool: true,
+    tennis: false,
+    crimeRate: "high",
+    schools: 24
+  }
+
+  const neighborhood3 = {
+    neighborhood: "Oak Mountain",
+    medianHomePrice: 290000,
+    pool: false,
+    tennis: false,
+    crimeRate: "low",
+    schools: 24
+  }
+
+  const neighborhood4 = {
+    neighborhood: "Ginormous Acres",
+    medianHomePrice: 350000,
+    pool: true,
+    tennis: true,
+    crimeRate: "low",
+    schools: 27
+  }
+const desirableNeighborhood = (neighborhood) => {
+      const medianHomePrice = neighborhood.medianHomePrice;
+      const crimeRate = neighborhood.crimeRate;
+      const schools = neighborhood.schools;
+
+
+
+
+  // function should return true if the neighborhood object is desireable
+  // false otherwise
+  //
+  // If the median home price is less than 300000
+  // crime rates are low
+  // the total rating of schools is at least 24.
 
 </script>
 <script src="../../Library/Application Support/JetBrains/IntelliJIdea2023.1/scratches/warmup.js"></script>
