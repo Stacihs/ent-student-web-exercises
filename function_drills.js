@@ -100,23 +100,52 @@
     const isLowerCase = (letter) => {
         return letter === letter.toLowerCase();
     };
-    // console.log(isLowerCase('y'));
+    // console.log(isLowerCase('m'));
+
+
+
 
 // Make a function named hasLowerCase(string) that returns if a string has any lower cased letter
-        const hasLowerCase = (string) => {
-                if (string.includes(isLowerCase())) {
-                        return string;
-                } else {
-                        return false;
-                }
-        };
+//         const hasLowerCase = (string) => {
+//              let splitString = string.split();
+//              let i = letter;
+//               for (let i = 0; i < splitString.length; i++) {
+//                    if ( )
+//               }
+//         };
+//
+// console.log(hasLowerCase('This is my string.'));
 
-console.log(hasLowerCase('This is my string.'));
+
+
 // Make a function named isSpace(letter) that returns if a character is a space character
+//     const isSpace = (letter) => {
+//         return letter === " ";
+//     };
+//   console.log(isSpace('k'));
+
 // Make a function named isZero(number)
+//         const isZero = (number) => {
+//             return number === 0;
+//         }
+// console.log(isZero(0));
+
 // Make a function named notZero(input) that returns true if the input is not zero
+//     const notZero = (input) => {
+//         return input !== 0;
+//     }
+//     console.log(notZero(0));
+
+
 // Write a function named lowerCase(string)
+//     const lowerCase = (string) => {
+//         return string === string.toLowerCase();
+//     }
+//     console.log(lowerCase("what"));
 // Write a function named double(n) that returns a number times two
+    const double = (n) => {
+        n * 2;
+    }
 // Write a function named triple(n) that returns a number times 3
 // Write a function named quadruple(n) that returns a number times 4
 // Write a function named half(n) that returns 1/2 of the provided input
