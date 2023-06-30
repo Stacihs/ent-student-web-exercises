@@ -50,7 +50,7 @@
         //     listItems[i].style.color = "grey";
         // }
         // TODO: Set text color of li with dbid = 1 to blue
-        // listItems[0].style.color = 'blue';
+        listItems[0].style.color = 'blue';
 
 
 
@@ -58,7 +58,7 @@
         const subParagraphs = document.getElementsByClassName('sub-paragraph');
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerText = 'Mission Accomplished!';
+        // subParagraphs[0].innerText = 'Mission Accomplished!';
 
         const btn1 = document.getElementById("btn 1");
         btn1.addEventListener('click', () => {
@@ -80,9 +80,7 @@
 
         const btn4 = document.getElementById("btn 4");
         btn4.addEventListener('click', () => {
-            // listItems[0].style.color = 'blue'
-            // from lecture notes
-            document.querySelector('[data-dbid="1"]').style.color = 'blue';
+            subParagraphs[0].innerText = 'Mission Accomplished!';
         });
 
 

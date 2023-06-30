@@ -57,7 +57,7 @@
 // Make a function named isTrue(boolean)
 //         const isTrue = (boolean) => {
 //             return boolean === true;
-//         }
+//         };
 //     console.log(isTrue(5 > 0));
 
 // Make a function named isFalse(boolean)
@@ -69,13 +69,13 @@
 // Make a function named isTruthy(input), remember that values other than true will behave like true
 //     const isTruthy = (input) => {
 //         return input == true;
-//     }
+//     };
 //     console.log(isTruthy(0 == "0"));
 
 // Make a function named isFalsy(input), remember that values other than false behave like false
 //     const isFalsy = (input) => {
 //         return input == false;
-//     }
+//     };
 //     console.log(isFalsy(0 == 0));
 
 // Make a function named isVowel(letter)
@@ -127,29 +127,50 @@
 // Make a function named isZero(number)
 //         const isZero = (number) => {
 //             return number === 0;
-//         }
+//         };
 // console.log(isZero(0));
 
 // Make a function named notZero(input) that returns true if the input is not zero
 //     const notZero = (input) => {
 //         return input !== 0;
-//     }
+//     };
 //     console.log(notZero(0));
 
 
 // Write a function named lowerCase(string)
 //     const lowerCase = (string) => {
 //         return string === string.toLowerCase();
-//     }
+//     };
 //     console.log(lowerCase("what"));
 // Write a function named double(n) that returns a number times two
-    const double = (n) => {
-        n * 2;
-    }
+//     const double(n) = number => {
+//     };
+// console.log(double(n)(1000));
+
 // Write a function named triple(n) that returns a number times 3
+//     const triple = (n) => {
+//         return n * 3;
+//     };
+// console.log(triple(6));
+
 // Write a function named quadruple(n) that returns a number times 4
+//     const quadruple = n => {
+//         return n * 4;
+//     };
+// console.log(quadruple(5));
+
 // Write a function named half(n) that returns 1/2 of the provided input
+//     const half = n => {
+//             return n / 2;
+//     };
+// console.log(half(100));
+
 // Write a function named subtract(a, b) that returns a minus b
+//     const subtract = (a, b) => {
+//         return a - b;
+//     };
+// console.log(subtract(-10, 4));
+
 // Write a function named multiply(a, b) that returns the product of a times b
 // Write a function named divide(a, b) that returns a divided by b
 // Write a function named remainder(a, b) that returns the remainder after dividing a by b
