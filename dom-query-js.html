@@ -83,10 +83,20 @@
             subParagraphs[0].innerText = 'Mission Accomplished!';
         });
 
-
-
-
-
+    // # Dom Events
+    //
+    //     1. When a user hits the "g" key, the background of the page should turn purple.
+    //     2. Every time the enter key is pressed, increment and display a counter that
+    //     shows the total number of times the enter key has been pressed.
+    //     3. When someone types 1, 2, 3 in a row, show an alert that says "You get a 50%
+    //     discount!".
+        const bodyBkgnd = document.getElementsByTagName("body")[0];
+        bodyBkgnd.addEventListener("keydown", () => {
+            let keyCode =  0x0022;
+            if (keyCode) {
+                bodyBkgnd.style["background-color"] = "purple";
+            }
+        });
     })();
 </script>
 </body>
