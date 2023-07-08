@@ -394,28 +394,81 @@ makeUpperCase(null) // returns false
   // crime rates are low
   // the total rating of schools is at least 24.
 
-  === WARM UP
+  // === WARM UP
 
 
   // Write a function, returnLargestStudentCount, that takes in an array of classes returns the number of students in the largest class.
   // Assume at least one class object will be present in the input array with students property set to a valid positive integer.
 
-          let classes = [
-    {class: "6th grade history", students: 18},
-    {class: "7th grade history", students: 20},
-    {class: "8th grade history", students: 22},
-    {class: "4th grade history", students: 30},
-    {class: "10th grade history", students: 25}
-  ];
- const returnLargestStudentCount = (classes) => {
-   for (let i = 0; i < classes.length; i++) {
+ //          let classes = [
+ //    {class: "6th grade history", students: 18},
+ //    {class: "7th grade history", students: 20},
+ //    {class: "8th grade history", students: 22},
+ //    {class: "4th grade history", students: 30},
+ //    {class: "10th grade history", students: 25}
+ //  ];
+ // const returnLargestStudentCount = (classes) => {
+ //   for (let i = 0; i < classes.length; i++) {
+ //
+ //
+ //  }
+ //
+ // };
+
+  // returnLargestStudentCount(classes) // returns 30
+
+  // 1. Create a function that prints 1 to 100.
+
+  const countTo100 = count => {
+    count = 1;
+    while (count <= 100) {
+      console.log(count);
+      count++;
+    }
+  };
+  countTo100();
 
 
-  }
+  // 2. Create a function, fizzBuzz, that prints out all numbers from 1 to 100 but instead of printing
+  // numbers that are evenly divisible by 3, print 'fizz' and any numbers evenly divisible
+  // by 5, print 'buzz'. For any numbers that are evenly divisible by 3 AND 5, print 'fizzbuzz'.
 
- };
+  const fizzBuzz = count => {
+    countTo100();
+    if (count % 3 === 0) {
+      console.log('fizz');
+      continue;
+    } else if(count % 5 === 0) {
+      console.log ('buzz');
+      continue;
+    } else if(count % 3 === 0 && count % 5 === 0) {
+      console.log('fizzbuzz');
+      continue;
+    }
+  };
 
-  returnLargestStudentCount(classes) // returns 30
+(fizzBuzz());
+  /*
+  fizzBuzz() // prints...
+
+  1
+  2
+  'fizz'
+  4
+  'buzz'
+  'fizz'
+  7
+  8
+  'fizz'
+  'buzz'
+  11
+  'fizz'
+  13
+  14
+  'fizzbuzz'
+  etc...
+
+  */
 
 
 

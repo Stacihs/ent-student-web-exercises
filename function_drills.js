@@ -97,24 +97,28 @@
 //     console.log(isCapital('L'));
 
 // Make a function named isLowerCase(letter)
-    const isLowerCase = (letter) => {
-        return letter === letter.toLowerCase();
-    };
-    // console.log(isLowerCase('m'));
+//     const isLowerCase = (letter) => {
+//         return letter === letter.toLowerCase();
+//     };
+//     console.log(isLowerCase('K'));
 
 
 
 
 // Make a function named hasLowerCase(string) that returns if a string has any lower cased letter
-//         const hasLowerCase = (string) => {
-//              let splitString = string.split();
-//              let i = letter;
-//               for (let i = 0; i < splitString.length; i++) {
-//                    if ( )
-//               }
-//         };
-//
-// console.log(hasLowerCase('This is my string.'));
+        const hasLowerCase = (string) => {
+             for (let i = 0; i < string.length; i++) {
+                 let letter = string[i];
+                 console.log(string[i]);
+                 if (string.includes(string[i] === string[i].toLowerCase())) {
+
+
+                     return string[i] === string[i].toLowerCase();
+                 }
+             }
+        };
+
+console.log(hasLowerCase('get out'));
 
 
 
