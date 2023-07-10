@@ -102,31 +102,19 @@
 //     };
 //     console.log(isLowerCase('K'));
 
-
-
-
 // Make a function named hasLowerCase(string) that returns if a string has any lower cased letter
-        const hasLowerCase = (string) => {
-             for (let i = 0; i < string.length; i++) {
-                 let letter = string[i];
-                 console.log(string[i]);
-                 if (string.includes(string[i] === string[i].toLowerCase())) {
-
-
-                     return string[i] === string[i].toLowerCase();
-                 }
-             }
-        };
-
-console.log(hasLowerCase('get out'));
-
-
+//         const hasLowerCase = (string) => {
+//             return Boolean(string.match(/[a-z]/));
+//         };
+//
+// console.log(hasLowerCase('Come'));
 
 // Make a function named isSpace(letter) that returns if a character is a space character
 //     const isSpace = (letter) => {
-//         return letter === " ";
+//         return " " === letter;
 //     };
-//   console.log(isSpace('k'));
+//
+// console.log(isSpace(" "));
 
 // Make a function named isZero(number)
 //         const isZero = (number) => {
@@ -146,10 +134,12 @@ console.log(hasLowerCase('get out'));
 //         return string === string.toLowerCase();
 //     };
 //     console.log(lowerCase("what"));
+
 // Write a function named double(n) that returns a number times two
-//     const double(n) = number => {
+//     const double = n => {
+//             return n * 2;
 //     };
-// console.log(double(n)(1000));
+// console.log(double(1000));
 
 // Write a function named triple(n) that returns a number times 3
 //     const triple = (n) => {
@@ -176,16 +166,80 @@ console.log(hasLowerCase('get out'));
 // console.log(subtract(-10, 4));
 
 // Write a function named multiply(a, b) that returns the product of a times b
+//     const multiply = (a , b) => {
+//         return a * b;
+//     };
+// console.log(multiply(7, 8));
+
 // Write a function named divide(a, b) that returns a divided by b
+//     const divide = (a, b) => {
+//         return a / b;
+//     };
+// console.log(divide(20, 5));
+
 // Write a function named remainder(a, b) that returns the remainder after dividing a by b
-// Make a function named modulo(a, b) that returns the returns the remainder after dividing a by b
+//     const remainder = (a, b) => {
+//         return a % b;
+//     };
+//     console.log(remainder(10, 3));
+
+// Make a function named modulo(a, b) that returns the remainder after dividing a by b
+//     const modulo = (a, b) => {
+//         return a % b;
+//     };
+//     console.log(modulo(10, 3));
+
+
 // Write a function named cube(n) that returns n * n * n
+//     const cube = n => {
+//         return n * n * n;
+//     };
+// console.log(cube(5));
+
 // Write a function named squareRoot(n) that returns the square root of the input
+//     const squareRoot = n => {
+//       return  Math.sqrt(n);
+//     };
+//     console.log(squareRoot(25));
+
 // Write a function named cubeRoot(n) that returns the cube root of the input
-// Write a function named invertSign(number) that returns a negative version of a postive number, a positve version of negative, and false for all else.
+//     const cubeRoot = n => {
+//         return Math.cbrt(n);
+//     }
+// console.log(cubeRoot(64));
+
+// Write a function named invertSign(number) that returns a negative version of a positive number, a positive version of negative, and false for all else.
+//     const invertSign = number => {
+//         if (number > 0) {
+//             number = -number;
+//             return number;
+//         } else if (number < 0) {
+//             number *= -1;
+//             return number;
+//         } else {
+//             return false;
+//         }
+//     };
+//
+// console.log(invertSign(-65));
+
 // Write a function named degreesToRadians(number)
+//     const degreesToRadians = number => {
+//         return number * 3.14 / 180;
+//     };
+// console.log(degreesToRadians(100));
+
 // Write a function named radiansToDegrees(number)
+//     const radiansToDegrees = number => {
+//         return number * 180 / 3.14;
+//     };
+// console.log(radiansToDegrees(1));
+
 // Make a function named isBlank(input) that determines if a given input is spaces, newline characters, or tabs.
+    const isBlank = input => {
+
+    }
+
 //     Make a function named trim(string) that removes empty spaces before and after the input.
 //     Make a function named areEqual(input1, input2) that returns if both inputs have the same value
 // Make a function named areIdentical(input1, input2) that returns if both inputs are same value and data type.
