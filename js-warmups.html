@@ -510,35 +510,32 @@ makeUpperCase(null) // returns false
 //                   { name: "Eve", age: 17 }
 //           ]
 
-const calculateLapTimeAverage = (runners) => {
-    for(let runner of runners) {
-      for(let lapTime in runner.lapTimes) {
-        let avgLapTime;
-        avgLapTime = (lapTime += lapTime) / runner.lapTimes.length;
-        return avgLapTime;
-    }
-}
-
-    calculateLapTimeAverage(runners);
-
-
-
-const getTopRunners = runners => {
-      let topRunners = [];
-  for (let runner of runners) {
-    calculateLapTimeAverage(runner);
-    if (calculateLapTimeAverage() <= 50) {
-      topRunners.push(runner);
-      return topRunners;
-    } else if(topRunners === []) {
-      return topRunners;
-    }
-  }
-}
-
-
-
-
+// const calculateLapTimeAverage = (runners.lapTimes) => {
+//     let total = 0;
+//     let count = 0;
+//     for(let lapTime of runners.lapTimes) {
+//       total += lapTime;
+//       count++;
+//     }
+// }
+// //
+//     calculateLapTimeAverage(runners.lapTimes);
+// //
+//
+//
+// const getTopRunners = runners => {
+//       let topRunners = [];
+//   for (let runner of runners) {
+//     calculateLapTimeAverage(runner);
+//     if (calculateLapTimeAverage() <= 50) {
+//       topRunners.push(runner);
+//       topRunners.sort;
+//       return topRunners[topRunners.length-1].value;
+//     }
+//   }
+// }
+//
+// console.log(getTopRunners());
   // returns an array of top runners
 //   A runner is considered top if their
 //           // average lap time is 50 seconds or faster
@@ -548,7 +545,7 @@ const getTopRunners = runners => {
   // HINT: You might want to create a function called calculateLapTimeAverage
   // that takes in an array of numbers and returns the average
 
-
+// expected output Eve
 
 
 </script>

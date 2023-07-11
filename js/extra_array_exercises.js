@@ -9,15 +9,17 @@
     // allIndexesOf(fruits, "apple") should return the array [0, 3]
     // allIndexesOf(fruits, "guava") should return the array []
     // allIndexesOf(fruits, "pineapple") should return [4]
-    const allIndexesOf = (array, value) => {
-        for (items in items) {
-            if(array.contains(array.value)) {
-                return array
-            }
-        }
-
-    }
-
+    // const allIndexesOf = (array, item) => {
+    //     for (let i = 0; i < array.length; i++) {
+    //         if(array.includes(item)) {
+    //             return item[i];
+    //         } else {
+    //             return [];
+    //         }
+    //     }
+    // };
+    //
+    // console.log(allIndexesOf(fruits, 'guava'));
 
     // Define a function named removeAll(array, value) that takes in two arguments. The first argument should be an array and the second argument should be a value you wish to remove
     //
@@ -27,6 +29,11 @@
     // removeAll(bugs, "ant") should return ["mosquito", "scorpion",   "mosquito", "typo", "reference error", "type error"]
     // removeAll(bugs, "mosquito") should return ["ant", "scorpion", "ant",   "ant", "typo", "reference error", "type error"]
     // removeAll(bugs, "roach") should return the original array b/c "roach" has no occurrances.
+    const removeAll = (array, value) => {
+
+    }
+
+
     //     Make a function called randomIntBetween(min, max) that returns a random number between the min and the max.
     //     Make a function called coinFlip() that returns either 0 or 1, randomly
     // Make a function called twoDice() that returns the sum of rolling two six sided dice.
