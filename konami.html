@@ -1,45 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Konami Code</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konami Code</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/konami.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Konami Code</h1>
+<div class="page-wrapper d-flex justify-center">
+  <div class="container">
+    <div class="row">
+      <div class="column d-flex align-center">
+        <h1>Konami Code</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossOrigin="anonymous"></script>
 <script>
 
-  "use strict";
-$(() => {
+
+    "use strict";
+    $(() => {
 
 
-  $(document).keyup(function(event){
-    console.log(event.keyCode);
-  });
+        $(document).keyup(function (event) {
+            console.log(event.keyCode);
+        });
 
-  // const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
-  const userCode = [];
+        const konamiCode = JSON.stringify([38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]);
+        const userCode = [];
 
-  $(document).keyup((event) => {
-    userCode.push(event.keyCode);
-  });
+        $(document).keyup((event) => {
+          userCode.push(event.keyCode);
 
-  $(document).on('keyup', (event) => {
-    if (userCode[userCode.length-1] === 13) {
-      $(function () {
-        alert('You have added 30 lives!');
-      });
-    }
-  });
-
-});
-
+          if (JSON.stringify(userCode) === konamiCode) {
+            $(function () {
+              alert('You have added 30 lives!');
+            });
+          }
+        });
+    });
 
 
 </script>

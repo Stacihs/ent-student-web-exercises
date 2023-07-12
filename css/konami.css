@@ -1,0 +1,9 @@
+.page-wrapper {
+    min-height: 100vh;
+    background-color: #ec34b4;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
