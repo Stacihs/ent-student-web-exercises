@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax Store</title>
+    <link rel="stylesheet" href="css/ajax-store.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <h1>My Tool Store</h1>
+
+    <table id="products">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+        </thead>
+        <tbody id="insertProducts"></tbody>
+    </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+(function() {
+    "use strict";
+    $('table').append('<button>Refresh</button>')
+
+
+    // TODO: Create an AJAX GET request for the file under data/inventory.json
+    $.ajax("data/inventory.json");
+
+
+    // TODO: Take the data from inventory.json and append it to the products table
+    $.ajax("data/inventory.json").done((data) => {
+        console.log(data);
+        renderInventoryList(data);
+        $('button').on('click', (() => {
+            renderInventoryList(data);
+        }))
+    });
+
+
+
+    const renderInventoryList = ( (toolsData) => {
+        for (let tool of toolsData) {
+            $('#insertProducts').append(`<tr>
+                <td>${tool.title}</td>
+                <td>${tool.quantity}</td>
+                <td>${tool.price}</td>
+                <td>${tool.categories}</td>
+            </tr>`);
+        }
+
+    });
+
+
+
+
+
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+})();
+</script>
+
+</body>
+</html>
