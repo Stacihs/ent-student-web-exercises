@@ -1,16 +1,13 @@
 $(() => {
-
+"use strict"
     // GLOBAL VARIABLES
     const map = initializeMap();
     // const map = initializeCityFavRestaurantMap();
-    // const map = topThree();
-    // const popup = createPopup();
-    // const marker = createMarker();
     const restaurants = [
         {
             "name": "Ida Claire",
             "address": "7300 Jones Maltsberger Rd, San Antonio, TX 78209",
-            "phone": 210 - 667 - 2145
+            "phone": 210-667-2145
         }, {
             "name": "The Rustic",
             "address": "7619 La Cantera Pkwy UNIT 204, San Antonio, TX 78257",
@@ -62,15 +59,14 @@ $(() => {
     //     return new mapboxgl.Map(mapOptions);
     // }
 
-    // REFACTOR Create markers for three favorite restaurants
+//     // REFACTOR Create markers for three favorite restaurants
     function topThree() {
 
         restaurants.forEach( (restaurant) => {
 
             geocode(`${restaurant.address}`, MAPBOX_TOKEN).then((data) => {
                 console.log(data);
-                // map.setCenter(data);
-                // map.setZoom(15);
+                map.setCenter(data);
                 const restaurantPopup = new mapboxgl.Popup()
                     .setHTML(`<h1>${restaurant.name}</h1><p>${restaurant.address}</p><p>${restaurant.phone}</p>`)
                 const restaurantMarker = new mapboxgl.Marker()
@@ -81,24 +77,6 @@ $(() => {
         });
     }
 
-topThree();
-// Create marker and set zoom for best viewing
-// function createMarker() {
-//     return
-//         .setLngLat([-98.48104, 29.44258])
-//         .addTo(map)
-// }
+    topThree();
 
-// Create popup with name of restaurant(after it has been clicked!)
-// function createPopup() {
-//     return new mapboxgl.Popup()
-//         .setLngLat([-98.48104, 29.44258])
-//         .setHTML(`
-//             <div>
-//                 <h1>Southerleigh Fine Food And Brewery</h1>
-//             </div>
-//         `);
-// }
-
-
-});
+})();
