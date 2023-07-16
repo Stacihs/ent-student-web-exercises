@@ -1,0 +1,10 @@
+
+#weatherInfo {
+    text-align: center;
+    width: 30rem;
+    height: auto;
+}
+
+span {
+    font-size: 1.25rem;
+}
