@@ -15,7 +15,7 @@ $(() => {
         )
     })
 
-    //
+    //Bolds font weight on <li>s when parent <h3> is clicked
     $('h3').on('click',function (event) {
         $(event.target).next().css('font-weight', 'bold')
     })

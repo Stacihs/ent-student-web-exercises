@@ -40,5 +40,15 @@
         "quantity": 10,
         "categories": ["tool", "outdoor"],
         "price":    20
+    }, {
+        "title":     "Garden Hose",
+        "quantity":   50,
+        "categories": ["outdoor"],
+        "price":    15
+    }, {
+        "title":    "Saw",
+        "quantity": 20,
+        "categories": ["tool"],
+        "price":    20
     }
 ]
