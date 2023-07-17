@@ -3,17 +3,22 @@
 }
 
 header {
-    font-size: 2rem;
     text-align: center;
     margin: 1rem;
 }
-#weatherInfo {
+
+h1 {
+    font-size: 2rem;
+}
+
+.weatherCard {
     text-align: center;
-    height: 32rem;
+    height: 25rem;
     width: auto;
     border: 1px solid rgba(108, 106, 106, 0.15);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
+    font-size: .5rem;
 }
 
 #weatherInfo h2 {
