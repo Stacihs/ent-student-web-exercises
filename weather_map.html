@@ -20,18 +20,23 @@
 </head>
 <body>
 <div class="page-wrapper">
-    <div class="container">
+    <div class="container justify-center">
         <header>
             <h1>Weather App</h1>
-            <label for="city">Search</label>
-            <input type="search" name="city" id="city">
+            <label for="place">Enter Name of Place</label>
+            <input type="search" name="place" id="place">
         </header>
-
         <div class="row justify-center">
             <div class="d-flex align-center">
-                <div class="row gap-15 justify-space-evenly" id="weatherInfo">
+                <div class="row gap-25 justify-space-evenly" id="weatherInfo">
                 </div>
             </div>
+        </div>
+        <div class="row justify-center">
+            <div class="column align-center">
+                <div id="map"></div>
+            </div>
+
         </div>
     </div>
 </div>

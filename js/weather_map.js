@@ -1,10 +1,12 @@
 $(() => {
     "use strict";
+
     /*****GLOBAL VARIABLES*****/
-        // const OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
-        // const map = initializeMap();
+    // const OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
     const OPEN_WEATHER_URL_FIVE_DAY = "https://api.openweathermap.org/data/2.5/forecast";
-    // const map = initializeMap();
+    const map = initializeMap();
+    let userInput = document.querySelector('input').innerText;
+
 
     /*****FUNCTIONS*****/
     // $.ajax(OPEN_WEATHER_URL, {
@@ -45,11 +47,11 @@ $(() => {
     const renderFiveDayForecast = ((weatherStats) => {
         weatherStats.list.forEach((day, index) => {
             if (index % 8 === 0) {
-                $('#weatherInfo').append(`<div class="weatherCard">
-                        <h2>${day.dt_txt}</h2>
+                $('#weatherInfo').append(`<div class="weatherCard d-flex flex-column justify-space-around">
+                    <h2>${day.dt_txt.slice(0, 10).split('-').reverse().join('/')}</h2>
                     <div><span id="temp">${parseInt(day.main.temp)}&deg;</span></div>
-                     <h2>Feels Like</h2>
-                     <div><span>${parseInt(day.main.feels_like)}&deg;</span></div>
+                    <h2>Feels Like</h2>
+                    <div><span>${parseInt(day.main.feels_like)}&deg;</span></div>
                     <h2>Humidity</h2>
                     <div><span>${parseInt(day.main.humidity)}%</span></div>
                     <h2>Wind</h2>
@@ -61,48 +63,49 @@ $(() => {
         });
     });
 
-    // function initializeMap() {
-    //     mapboxgl.accessToken = MAPBOX_TOKEN;
-    //
-    //     const mapOptions = {
-    //         container: 'map',
-    //         style: 'mapbox://styles/mapbox/navigation-day-v1',
-    //         center: [-98.491142, 29.424349],
-    //         zoom: 10
-    //     }
-    //     return new mapboxgl.Map(mapOptions);
-    // }
-    //
-    // function initializeCityFavRestaurantMap() {
-    //         mapboxgl.accessToken = MAPBOX_TOKEN;
-    //
-    //         const mapOptions = {
-    //             container: 'map',
-    //             style: 'mapbox://styles/mapbox/navigation-day-v1',
-    //             center: [-98.491142, 29.424349],
-    //             zoom: 10
-    //         }
-    //         geocode('136 E Grayson St Suite 120, San Antonio, TX 78215', MAPBOX_TOKEN).then((data) => {
-    //             console.log(data);
-    //             map.setCenter(data);
-    //             map.setZoom(15);
-    //             const southerleighPopup = new mapboxgl.Popup()
-    //                 .setHTML(`<p>Southerleigh Fine Food And Brewery</p>`)
-    //             const restaurantMarker = new mapboxgl.Marker()
-    //                 .setLngLat(data)
-    //                 .addTo(map)
-    //                 .setPopup(southerleighPopup);
-    //         })
-    //
-    //         return new mapboxgl.Map(mapOptions);
-    //     }
-    //
-    //     initializeCityFavRestaurantMap();
+    function initializeMap() {
+        mapboxgl.accessToken = MAPBOX_TOKEN;
 
-    /*****EVENTS*****
-     //
+        const mapOptions = {
+            container: 'map',
+            style: 'mapbox://styles/mapbox/navigation-day-v1',
+            center: [-98.491142, 29.424349],
+            zoom: 10
+        }
+        return new mapboxgl.Map(mapOptions);
+    }
+
+
+    // Map
+    function userInputSearch() {
+
+        const mapOptions = {
+            container: 'map',
+            style: 'mapbox://styles/mapbox/navigation-day-v1',
+            center: [-98.491142, 29.424349],
+            zoom: 10
+        }
+        geocode(userInput, MAPBOX_TOKEN).then((data) => {
+            console.log(data);
+            map.setCenter(data);
+            map.setZoom(15);
+            // const southerleighPopup = new mapboxgl.Popup()
+            //     .setHTML(`<p>Southerleigh Fine Food And Brewery</p>`)
+            const userMarker = new mapboxgl.Marker()
+                .setLngLat(data)
+                .addTo(map)
+                // .setPopup(southerleighPopup);
+        })
+
+        return new mapboxgl.Map(mapOptions);
+    }
+
+
+    /*****EVENTS*****/
+     //When user types in search
+     // userInput.addEventListener('search', userInputSearch);
 
      /*****RUNS WHEN APP LOADS*****/
-
-
+     userInputSearch();
 });
+
