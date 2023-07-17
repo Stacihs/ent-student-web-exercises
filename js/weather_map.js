@@ -1,12 +1,9 @@
 $(() => {
     "use strict";
     /*****GLOBAL VARIABLES*****/
-        // const map = initializeMap();
-
     const OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     /*****FUNCTIONS*****/
-
     $.ajax(OPEN_WEATHER_URL, {
         data: {
             APPID: OPEN_WEATHER_APPID, lat: 29.423017, lon: -98.48527, units: "imperial"
@@ -14,8 +11,9 @@ $(() => {
     }).done((data) => {
         console.log('current weather', data);
         renderCurrentWeather(data);
-    });
+    }).fail(console.error);
 
+    // Renders current weather conditions
     const renderCurrentWeather = ((weatherStats) => {
         $('#weatherInfo').append(`<div class="weatherCard">
                 <h1>Current Conditions for ${weatherStats.name}</h1>
@@ -23,6 +21,8 @@ $(() => {
                 <div><span>${parseInt(weatherStats.main.temp)}&deg;</span></div>
                 <h2>Feels Like</h2>
                 <div><span>${parseInt(weatherStats.main.feels_like)}&deg;</span></div>
+                <h2>Humidity</h2>
+                <div><span>${parseInt(weatherStats.main.humidity)}%</span></div>
                 <h2>Wind</h2>
                 <div><span>${weatherStats.wind.speed} mph</span></div>
                 <h2>Conditions</h2>
@@ -31,6 +31,8 @@ $(() => {
 
     });
 
+
+    // const map = initializeMap();
     // function initializeMap() {
     //     mapboxgl.accessToken = MAPBOX_TOKEN;
     //
