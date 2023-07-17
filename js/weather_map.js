@@ -16,9 +16,8 @@ $(() => {
     // Renders current weather conditions
     const renderCurrentWeather = ((weatherStats) => {
         $('#weatherInfo').append(`<div class="weatherCard">
-                <h1>Current Conditions for ${weatherStats.name}</h1>
-                <h2>Current Temperature</h2>
-                <div><span>${parseInt(weatherStats.main.temp)}&deg;</span></div>
+                <h1>${weatherStats.name}</h1>
+                <div><span id="temp">${parseInt(weatherStats.main.temp)}&deg;</span></div>
                 <h2>Feels Like</h2>
                 <div><span>${parseInt(weatherStats.main.feels_like)}&deg;</span></div>
                 <h2>Humidity</h2>
