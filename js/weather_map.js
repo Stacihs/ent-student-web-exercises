@@ -5,7 +5,8 @@ $(() => {
     // const OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
     const OPEN_WEATHER_URL_FIVE_DAY = "https://api.openweathermap.org/data/2.5/forecast";
     const map = initializeMap();
-    let userInput = document.querySelector('input').innerText;
+    let userInputBox = document.querySelector('input');
+    let userInput = document.querySelector('input').innerHTML;
 
 
     /*****FUNCTIONS*****/
@@ -17,8 +18,8 @@ $(() => {
     //     console.log('current weather', data);
     //     renderCurrentWeather(data);
     // }).fail(console.error);
-
-    // Renders current weather conditions
+    //
+    // // Renders current weather conditions
     // const renderCurrentWeather = ((weatherStats) => {
     //     $('#weatherInfo').append(`<div class="weatherCard">
     //             <h1>${weatherStats.name}</h1>
@@ -44,6 +45,7 @@ $(() => {
         renderFiveDayForecast(data);
     }).fail(console.error);
 
+    // Dynamically render html to DOM for five-day forecast
     const renderFiveDayForecast = ((weatherStats) => {
         weatherStats.list.forEach((day, index) => {
             if (index % 8 === 0) {
@@ -55,7 +57,7 @@ $(() => {
                     <h2>Humidity</h2>
                     <div><span>${parseInt(day.main.humidity)}%</span></div>
                     <h2>Wind</h2>
-                    <div><span>${day.wind.speed} mph</span></div>
+                    <div><span>${parseInt(day.wind.speed)} mph</span></div>
                     <h2>Conditions</h2>
                     <div><span>${day.weather[0].description}</span></div>
                 </div>`);
@@ -103,9 +105,9 @@ $(() => {
 
     /*****EVENTS*****/
      //When user types in search
-     // userInput.addEventListener('search', userInputSearch);
+     userInputBox.addEventListener('keydown', userInputSearch());
 
      /*****RUNS WHEN APP LOADS*****/
-     userInputSearch();
+     // userInputSearch();
 });
 
