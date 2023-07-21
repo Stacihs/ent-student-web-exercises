@@ -827,29 +827,29 @@ makeUpperCase(null) // returns false
   // Input: [62, 3, 2, 8, 531, 7]
   // Expected Output: [3, 531, 7]
 
-  const removeEvenNumbers = (input) => {
-    // create an array to hold the odd numbers
-    const oddNumbers = [];
-
-    // loop through original array
-    for (let i = 0; i < input.length; i++) {
-      // inside the loop:
-        // check if number is even
-        // if it is even: do nothing
-
-        // if it's NOT even: push to oddNumbers array
-      if(!input[i] % 2 === 0) {
-        oddNumbers.push(input[i]);
-      }
-
-    }
-
-
-    // at the end (outside the loop), return this new array
-    return oddNumbers;
-
-
-  }
+  // const removeEvenNumbers = (input) => {
+  //   // create an array to hold the odd numbers
+  //   const oddNumbers = [];
+  //
+  //   // loop through original array
+  //   for (let i = 0; i < input.length; i++) {
+  //     // inside the loop:
+  //       // check if number is even
+  //       // if it is even: do nothing
+  //
+  //       // if it's NOT even: push to oddNumbers array
+  //     if(!input[i] % 2 === 0) {
+  //       oddNumbers.push(input[i]);
+  //     }
+  //
+  //   }
+  //
+  //
+  //   // at the end (outside the loop), return this new array
+  //   return oddNumbers;
+  //
+  //
+  // }
 
 
 
@@ -867,17 +867,17 @@ makeUpperCase(null) // returns false
   // <body>
   // <script>
 
-    "use strict";
-
-    // ============== MINI EXERCISE 1
-
-    // TODO: Refactor the following older JS code to use more modern syntax. The output should stay the same.
-    // consider how variables are created and the values are concatenated in the string
-
-    const greatDessert = 'banana pudding';
-    const badDessert = 'rhubarb pie';
-    const dessertMessage = 'Well, I love ' + greatDessert + ' but I don\'t care for ' + badDessert + '.';
-    console.log(dessertMessage);
+    // "use strict";
+    //
+    // // ============== MINI EXERCISE 1
+    //
+    // // TODO: Refactor the following older JS code to use more modern syntax. The output should stay the same.
+    // // consider how variables are created and the values are concatenated in the string
+    //
+    // const greatDessert = 'banana pudding';
+    // const badDessert = 'rhubarb pie';
+    // const dessertMessage = 'Well, I love ' + greatDessert + ' but I don\'t care for ' + badDessert + '.';
+    // console.log(dessertMessage);
 
 
 
@@ -942,12 +942,12 @@ makeUpperCase(null) // returns false
     // TODO: Refactor the following code to use ES6 syntax. The output should stay the same.
     // consider the type of loop, concatenation and how variables are declared
 
-    let message = '';
-    const names = ['John', 'Paul', 'George', 'Ringo'];
-    for (name of names) {
-        message = `Hello, ${name}`;
-    }
-    console.log(message);
+    // let message = '';
+    // const names = ['John', 'Paul', 'George', 'Ringo'];
+    // for (name of names) {
+    //     message = `Hello, ${name}`;
+    // }
+    // console.log(message);
 
 
     // ============== MINI EXERCISE 3
@@ -1065,16 +1065,16 @@ makeUpperCase(null) // returns false
     // console.log(isCute);
     // console.log(puppy)
 
-    const data = {
-    hum: ["32%", "35%"],
-    temp: {
-    degreesMetric: 34,
-    degreesImperial: 56
-  },
-    pressure: "1100ml",
-    extra: "asdfasd",
-    extra1: "sdfsdf"
-  }
+  //   const data = {
+  //   hum: ["32%", "35%"],
+  //   temp: {
+  //   degreesMetric: 34,
+  //   degreesImperial: 56
+  // },
+  //   pressure: "1100ml",
+  //   extra: "asdfasd",
+  //   extra1: "sdfsdf"
+  // }
 
 
 
@@ -1149,23 +1149,23 @@ makeUpperCase(null) // returns false
     // TODO: Refactor the following code to use ES6 syntax. The output should stay the same.
     // consider how property values are added to the object and then used in the function
 
-    const printAuthDetails = ({user: {username, email}}) => {
-    console.log(`The username is ${user.username}`);
-    console.log(`The email is ${user.email}`);
-  }
+<!--    const printAuthDetails = ({user: {username, email}}) => {-->
+<!--    console.log(`The username is ${user.username}`);-->
+<!--    console.log(`The email is ${user.email}`);-->
+<!--  }-->
 
-    const email = prompt('Enter an email address');
-    const username = prompt('Enter an a username');
-    const password = prompt('Enter a password');
+<!--    const email = prompt('Enter an email address');-->
+<!--    const username = prompt('Enter an a username');-->
+<!--    const password = prompt('Enter a password');-->
 
-    let user = {email, username, password};
+<!--    let user = {email, username, password};-->
 
-    printAuthDetails(user);
+<!--    printAuthDetails(user);-->
 
 </script>
 
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->
 
 
 
