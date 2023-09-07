@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to JS</title>
+    <style>
+        p {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid atque aut corporis illum laudantium nobis odio odit, perspiciatis porro possimus quae repellat soluta suscipit tempore totam vel veritatis vero!
+    </p>
+    <p id="second">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque facere facilis fugit inventore natus odit saepe vero voluptatum. At consectetur corporis distinctio esse exercitationem saepe? Dolore ducimus numquam unde?
+    </p>
+    <script>
+        const fiveSeconds = () => alert('Five seconds have passed!');
+        // setTimeout(fiveSeconds, 5000);
+
+        document.querySelector("#second").addEventListener("click", event => event.target.style.color = "hotpink");
+    </script>
+</body>
+</html>
